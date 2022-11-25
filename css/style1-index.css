@@ -1,0 +1,592 @@
+/* Samina Ahmed | IN0006 - Web Development | Coursework 2  */
+
+/* This is the style sheet for the 1-index.html (homepage). */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased; /* This is what makes the font appear lighter than mormal */
+}
+
+#section1 {
+  height: 700px;
+}
+
+@font-face {
+  /* This is an external font which I downloaded from https://www.download-free-fonts.com/details/63175/filosofia */
+  font-family: "Filosofia";
+  src: url("../fonts/FilosofiaOT-Regular.otf") format("opentype");
+}
+
+.navbar {
+  position: fixed; /* To fix the navbar to the top even whilst scrolling */
+}
+
+/* Seperate classes for the Reservation button and the Careers button to change the styles where relevant */
+
+.reservation {
+  background-color: white;
+  margin-top: 28px;
+  margin-left: 28px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 20px;
+  font-weight: lighter;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.navmenu {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 7px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border: none;
+  border-right: 1px solid white;
+  background-color: transparent;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  cursor: pointer;
+  padding: 0 12px;
+  text-decoration: none;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 250ms ease-out;
+  text-underline-position: under;
+}
+
+.nav {
+  background-color: transparent;
+  margin-top: 25px;
+  border: none;
+  border-right: 1px solid white;
+  padding-left: 7px;
+  padding-right: 11px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 250ms ease-out;
+  text-underline-position: under;
+}
+
+.navcareers {
+  background-color: transparent;
+  margin-top: 25px;
+  border: none;
+  padding-left: 7px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 250ms ease-out;
+  text-underline-position: under;
+}
+
+/* For the underlin on hover effect */
+.navmenu:hover,
+.nav:hover,
+.navcareers:hover,
+.insta:hover,
+.address:hover,
+.phonenum:hover,
+.phonenum1:hover,
+.homefooter:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: white;
+}
+
+.homefooter {
+  color: white;
+  background-color: transparent;
+  margin-top: 25px;
+  border: none;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 23px;
+  font-weight: 0.5px;
+  cursor: pointer;
+  width: auto;
+  position: absolute;
+  bottom: 2.125rem;
+  left: 2.125rem;
+  right: 2.125rem;
+  font-size: 1.375em;
+  gap: 2cm;
+}
+
+.insta {
+  float: left;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 23px;
+  font-weight: lighter;
+  cursor: pointer;
+  width: auto;
+  position: absolute;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 250ms ease-out;
+  text-underline-position: under;
+}
+
+.address {
+  float: right !important;
+  padding-left: 10px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 23px;
+  font-weight: lighter;
+  cursor: pointer;
+  width: auto;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 250ms ease-out;
+  text-underline-position: under;
+}
+
+.phonenum {
+  color: white;
+  border: none;
+  border-right: 0.8px solid white;
+  padding-right: 5px;
+  text-decoration-line: none;
+  float: right;
+  background-color: transparent;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 23px;
+  cursor: pointer;
+  width: auto;
+  font-weight: 0.5px;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 250ms ease-out;
+  text-underline-position: under;
+}
+
+.phonenum1 {
+  color: white;
+  border: none;
+  padding-right: 5px;
+  text-decoration-line: none;
+  float: right;
+  background-color: transparent;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 23px;
+  font-weight: 0.5px;
+  cursor: pointer;
+  width: auto;
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 250ms ease-out;
+  text-underline-position: under;
+}
+
+/* This is to create the background slideshow on the homepage which I learnt from https://www.youtube.com/watch?v=P0Ot9qE5was */
+#SLIDE_BG {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBG 12s linear infinite 0s;
+  animation-timing-function: linear;
+  background-image: url("../indeximages/1.jpg");
+}
+
+@keyframes slideBG {
+  0% {
+    background-image: url("../indeximages/1.jpg");
+  }
+
+  25% {
+    background-image: url("../indeximages/2.jpg");
+  }
+
+  50% {
+    background-image: url("../indeximages/3.jpg");
+  }
+
+  75% {
+    background-image: url("../indeximages/4.jpg");
+  }
+
+  100% {
+    background-image: url("../indeximages/5.jpg");
+  }
+}
+
+.lucalogo {
+  width: 30%;
+  max-width: 30%;
+  min-width: 30% !important;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menuicon {
+  width: 33px;
+  align-content: top;
+  position: fixed;
+  top: 4%;
+  right: 2%;
+  cursor: pointer;
+}
+
+/* SECTION 2 - The small section after the homepage */
+
+#section2 {
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.bgimg2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.text {
+  font-family: Filosofia, Georgia, serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 200%;
+}
+
+.bookatable {
+  letter-spacing: 3px;
+  font-size: 20px;
+  background-color: transparent;
+  font-family: Filosofia, Georgia, serif;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  margin-top: 50px;
+}
+
+.bookatable:hover {
+  background-color: white;
+  border: none;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  padding-top: 16px;
+}
+
+/* SECTION 3 - The restaurant section */
+
+#section3,
+#section4,
+#section5,
+#section6,
+#section7 {
+  height: 100vh;
+  width: 100%;
+}
+
+.container1 {
+  height: 100vh;
+  width: 50%;
+  animation: fadeIn 3s;
+  overflow: hidden;
+  float: left;
+  background: orangered;
+}
+
+.container1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.resttext {
+  font-family: Filosofia, Georgia, serif;
+  top: 170%;
+  padding: 75px;
+  margin-top: 35px !important;
+  margin: 100px;
+  line-height: 30px;
+  width: 25%;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  float: left;
+  font-weight: lighter;
+}
+
+.container2 {
+  height: 100vh;
+  width: 50%;
+  object-fit: cover;
+  animation: fadeIn 3s;
+  overflow: hidden;
+  float: right;
+}
+
+.container2 img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* SECTION 4 - The Christmas section */
+
+.container3 {
+  height: 100vh;
+  width: 50%;
+  animation: fadeIn 3s;
+  overflow: hidden;
+  float: left;
+}
+
+.container3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container4 {
+  height: 100vh;
+  width: 50%;
+  animation: fadeIn 3s;
+  overflow: hidden;
+  float: right;
+}
+
+.container4 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+}
+
+.xmastext {
+  font-family: Filosofia, Georgia, serif;
+  padding: 75px;
+  margin-top: 105px !important;
+  margin: 100px;
+  line-height: 30px;
+  width: 25%;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  font-size: 22px;
+  float: center;
+  font-weight: lighter;
+  right: 0%;
+  top: 262%;
+}
+
+.xmasbuttons {
+  letter-spacing: 3px;
+  font-size: 20px;
+  background-color: transparent;
+  font-family: Filosofia, Georgia, serif;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.xmasbuttons:hover {
+  background-color: white;
+  border: none;
+  transition: border-color 350ms, color 350ms, background-color 350ms;
+  padding-top: 16px;
+}
+
+/* SECTION 5 - The Luca Bar section */
+
+.container5 {
+  height: 100vh;
+  width: 50%;
+  animation: fadeIn 3s;
+  overflow: hidden;
+  float: left;
+}
+
+.container5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.lucabartext {
+  font-family: Filosofia, Georgia, serif;
+  padding: 75px;
+  margin-top: 105px !important;
+  margin: 100px;
+  line-height: 30px;
+  width: 25%;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  font-size: 22px;
+  float: center;
+  font-weight: lighter;
+  right: 50%;
+  top: 365%;
+}
+
+.container6 {
+  height: 100vh;
+  width: 50%;
+  animation: fadeIn 3s;
+  overflow: hidden;
+  float: right;
+}
+
+.container6 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Contact section */
+
+#contact-us-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #e9e3a4;
+  align-items: center;
+  text-align: center;
+}
+
+h2.heading {
+  font-family: Filosofia, Georgia, serif;
+  color: black;
+  font-size: 22px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  padding-top: 55px;
+}
+
+p.contact-p {
+  font-family: Filosofia, Georgia, serif;
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-top: 40px;
+  line-height: 25px;
+}
+
+.inputs {
+  background-color: transparent;
+  border-color: 0.1px solid black;
+  width: 270px;
+  padding: 10px;
+  font-family: Filosofia, Georgia, serif;
+  padding: 12px 10px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border-radius: 0%;
+  font-weight: lighter;
+}
+
+input::placeholder {
+  font-family: Filosofia, Georgia, serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  color: black;
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+button[type="submit"] {
+  font-size: 11px;
+  letter-spacing: 3px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: Filosofia, Georgia, serif;
+  margin: 20px;
+  margin-bottom: 0px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1px;
+}
+
+img.submit {
+  width: 11px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(247, 247, 185);
+  cursor: pointer;
+  transition: background-color 350ms;
+}
+
+h2.heading2 {
+  font-family: Filosofia, Georgia, serif;
+  color: #ffffc8;
+  font-size: 30px;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  padding-top: 55px;
+}
+
+h2.heading2:hover {
+  color: white;
+  cursor: pointer;
+}
+
+p.creds {
+  font-family: Filosofia, Georgia, serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2be8a;
+  box-decoration-break: none;
+  line-height: 1.5333333333;
+  -webkit-font-smoothing: antialiased;
+}
+
+p.creds:hover {
+  color: #888560;
+  cursor: pointer;
+  transition: color 350ms;
+}

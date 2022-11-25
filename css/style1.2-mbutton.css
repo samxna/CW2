@@ -1,0 +1,47 @@
+/* Samina Ahmed | IN0006 - Web Development | Coursework 2  */
+
+/* This is the style sheet for 1.2-menubutton.html */
+
+* {
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.xmenuicon {
+  width: 33px;
+  align-content: top;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.lucalogo {
+  margin-top: 30px;
+  width: 90px;
+}
+
+.menu-heading {
+  margin-top: 600px;
+}
+
+.headings {
+  margin-top: 20px;
+  opacity: 0.5;
+  height: 43px;
+  cursor: pointer;
+}
+
+.headings:hover {
+  margin-top: 20px;
+  opacity: 1;
+  height: 43px;
+}
+
+.insta-icon {
+  margin-top: 80px;
+  margin-bottom: 22px;
+  width: 23.5px;
+  cursor: pointer;
+}
